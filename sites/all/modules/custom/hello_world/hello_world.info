@@ -1,0 +1,5 @@
+name = Hello World module
+description = Contains customizations to the hello world content type.
+core = 7.x
+package = Zietlow
+dependencies[] = content_type_hello_world
