@@ -30,7 +30,8 @@ function hello_world_install() {
  *   The path of the csv file to be loaded.
  *
  * @return array
- *   A multidimensional array containing record items to be imported.
+ *   An array containing an associated array for each line item in the csv file
+ * where the row headers are the array keys.
  */
 function _import_from_csv($path, $delimiter = ',') {
   if (!file_exists($path) || !is_readable($path)) {
@@ -87,7 +88,7 @@ function _create_vocab_terms($terms) {
  * Create hello world article nodes with sections.
  *
  * @param array $articles
- *   An array of stdObjects containing the following properties:
+ *   An array of associated arrays containing the following keys:
  *    - title
  *    - section
  */

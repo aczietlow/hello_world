@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="65fb365e-fc43-40d3-8a13-a5d1338ffa0b" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sites/all/modules/custom/hello_world/hello_world.info" afterPath="$PROJECT_DIR$/sites/all/modules/custom/hello_world/hello_world.info" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sites/all/modules/custom/hello_world/hello_world.install" afterPath="$PROJECT_DIR$/sites/all/modules/custom/hello_world/hello_world.install" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sites/all/modules/custom/hello_world/import/node_hello_world_article.csv" afterPath="$PROJECT_DIR$/sites/all/modules/custom/hello_world/import/node_hello_world_article.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sites/all/modules/custom/hello_world/import/terms_sections.csv" afterPath="$PROJECT_DIR$/sites/all/modules/custom/hello_world/import/terms_sections.csv" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="mediacurrent.iws" />
@@ -59,8 +56,8 @@
       <file leaf-file-name="hello_world.install" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/sites/all/modules/custom/hello_world/hello_world.install">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.3413793" vertical-offset="0" max-vertical-offset="2484">
-              <caret line="11" column="29" selection-start-line="11" selection-start-column="29" selection-end-line="11" selection-end-column="29" />
+            <state vertical-scroll-proportion="0.37931034" vertical-offset="1922" max-vertical-offset="2502">
+              <caret line="119" column="17" selection-start-line="119" selection-start-column="17" selection-end-line="119" selection-end-column="17" />
               <folding>
                 <element signature="e#6#100#0#PHP" expanded="true" />
               </folding>
@@ -397,7 +394,13 @@
       <option name="project" value="LOCAL" />
       <updated>1439159113670</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Successfully importing content from csvs... Without migrate.">
+      <created>1439161692346</created>
+      <option name="number" value="00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1439161692346</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -448,7 +451,8 @@
     <MESSAGE value="Creating taxonomy terms during installation." />
     <MESSAGE value="Creating the taxonomy terms during install actually works now." />
     <MESSAGE value="Importing data for entity creation from csv now." />
-    <option name="LAST_COMMIT_MESSAGE" value="Importing data for entity creation from csv now." />
+    <MESSAGE value="Successfully importing content from csvs... Without migrate." />
+    <option name="LAST_COMMIT_MESSAGE" value="Successfully importing content from csvs... Without migrate." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -656,8 +660,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/sites/all/modules/custom/hello_world/hello_world.install">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3413793" vertical-offset="0" max-vertical-offset="2484">
-          <caret line="11" column="29" selection-start-line="11" selection-start-column="29" selection-end-line="11" selection-end-column="29" />
+        <state vertical-scroll-proportion="0.37931034" vertical-offset="1922" max-vertical-offset="2502">
+          <caret line="119" column="17" selection-start-line="119" selection-start-column="17" selection-end-line="119" selection-end-column="17" />
           <folding>
             <element signature="e#6#100#0#PHP" expanded="true" />
           </folding>
