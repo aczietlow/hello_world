@@ -1,10 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="65fb365e-fc43-40d3-8a13-a5d1338ffa0b" name="Default" comment="Adding basic skeletal structure for this thing.">
+    <list default="true" id="65fb365e-fc43-40d3-8a13-a5d1338ffa0b" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sites/all/modules/custom/hello_world/hello_world.install" afterPath="$PROJECT_DIR$/sites/all/modules/custom/hello_world/hello_world.install" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sites/all/modules/custom/hello_world/hello_world.module" afterPath="$PROJECT_DIR$/sites/all/modules/custom/hello_world/hello_world.module" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sites/all/modules/custom/hello_world/thoughtProcess.md" afterPath="$PROJECT_DIR$/sites/all/modules/custom/hello_world/thoughtProcess.md" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="mediacurrent.iws" />
@@ -34,7 +32,7 @@
         <entry file="file://$PROJECT_DIR$/sites/all/modules/custom/hello_world/hello_world.info">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="270">
-              <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+              <caret line="5" column="47" selection-start-line="5" selection-start-column="47" selection-end-line="5" selection-end-column="47" />
               <folding />
             </state>
           </provider>
@@ -68,10 +66,23 @@
       <file leaf-file-name="hello_world.install" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/sites/all/modules/custom/hello_world/hello_world.install">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.7758621" vertical-offset="0" max-vertical-offset="1134">
-              <caret line="25" column="29" selection-start-line="25" selection-start-column="29" selection-end-line="25" selection-end-column="29" />
+            <state vertical-scroll-proportion="0.16206896" vertical-offset="500" max-vertical-offset="1224">
+              <caret line="33" column="0" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
               <folding>
                 <element signature="e#6#100#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="taxonomy.module" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/modules/taxonomy/taxonomy.module">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-50.0" vertical-offset="23688" max-vertical-offset="37116">
+              <caret line="1394" column="26" selection-start-line="1394" selection-start-column="26" selection-end-line="1394" selection-end-column="26" />
+              <folding>
+                <marker date="1434566324000" expanded="true" signature="19754:19889" placeholder="SELECT t.tid..." />
+                <marker date="1434566324000" expanded="true" signature="37847:37904" placeholder="SELECT name,..." />
               </folding>
             </state>
           </provider>
@@ -278,10 +289,6 @@
               <option name="myItemId" value="custom" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="content_type_vocab_hello_world" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
@@ -290,6 +297,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="/tmp/drupal_debug.txt" />
   </component>
   <component name="RunManager">
     <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
@@ -343,7 +351,13 @@
       <option name="project" value="LOCAL" />
       <updated>1439151378986</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Creating taxonomy terms during installation.">
+      <created>1439153828731</created>
+      <option name="number" value="00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1439153828731</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -390,7 +404,8 @@
     <MESSAGE value="Completed documentation containing implementation notes." />
     <MESSAGE value="Actually adding hello world module" />
     <MESSAGE value="Adding basic skeletal structure for this thing." />
-    <option name="LAST_COMMIT_MESSAGE" value="Adding basic skeletal structure for this thing." />
+    <MESSAGE value="Creating taxonomy terms during installation." />
+    <option name="LAST_COMMIT_MESSAGE" value="Creating taxonomy terms during installation." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -442,14 +457,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/sites/all/modules/custom/hello_world/hello_world.info">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="270">
-          <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/sites/all/modules/custom/hello_world/thoughtProcess.md">
       <provider editor-type-id="MarkdownPreviewEditor">
         <state />
@@ -471,10 +478,60 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/sites/all/modules/devel/devel.module">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.26984128" vertical-offset="31905" max-vertical-offset="38808">
+          <caret line="1785" column="31" selection-start-line="1785" selection-start-column="31" selection-end-line="1785" selection-end-column="31" />
+          <folding>
+            <marker date="1393776188000" expanded="true" signature="-1:-1" placeholder="SELECT uid F..." />
+            <marker date="1393776188000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1393776188000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1393776188000" expanded="true" signature="-1:-1" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/includes/cache.inc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-17.333334" vertical-offset="2286" max-vertical-offset="10476">
+          <caret line="156" column="9" selection-start-line="156" selection-start-column="9" selection-end-line="156" selection-end-column="9" />
+          <folding>
+            <marker date="1434566324000" expanded="true" signature="-1:-1" placeholder="SELECT cid, ..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///tmp/drupal_debug.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.17792422" vertical-offset="0" max-vertical-offset="607">
+          <caret line="6" column="1" selection-start-line="6" selection-start-column="1" selection-end-line="6" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/taxonomy/taxonomy.module">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-50.0" vertical-offset="23688" max-vertical-offset="37116">
+          <caret line="1394" column="26" selection-start-line="1394" selection-start-column="26" selection-end-line="1394" selection-end-column="26" />
+          <folding>
+            <marker date="1434566324000" expanded="true" signature="19754:19889" placeholder="SELECT t.tid..." />
+            <marker date="1434566324000" expanded="true" signature="37847:37904" placeholder="SELECT name,..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sites/all/modules/custom/hello_world/hello_world.info">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="270">
+          <caret line="5" column="47" selection-start-line="5" selection-start-column="47" selection-end-line="5" selection-end-column="47" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/sites/all/modules/custom/hello_world/hello_world.install">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7758621" vertical-offset="0" max-vertical-offset="1134">
-          <caret line="25" column="29" selection-start-line="25" selection-start-column="29" selection-end-line="25" selection-end-column="29" />
+        <state vertical-scroll-proportion="0.16206896" vertical-offset="500" max-vertical-offset="1224">
+          <caret line="33" column="0" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
           <folding>
             <element signature="e#6#100#0#PHP" expanded="true" />
           </folding>

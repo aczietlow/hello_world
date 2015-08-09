@@ -25,6 +25,14 @@ function hello_world_install() {
 function _create_vocab_terms($terms) {
   // Load the vocab that the terms are going to add to.
   $vocab = taxonomy_vocabulary_machine_name_load(HELLO_WORLD_VOCABULARY);
+
+  // The cache may need to be cleared here to help features.
+  if (empty($vocab)) {
+    drupal_flush_all_caches();
+    $vocab = taxonomy_vocabulary_machine_name_load(HELLO_WORLD_VOCABULARY);
+  }
+
+  // Load the t function since it's not available during the install process.
   $t = get_t();
 
   // Create a save a taxonomy term for each term provided.
@@ -32,7 +40,6 @@ function _create_vocab_terms($terms) {
     $new_term = new stdClass();
     $new_term->vid = $vocab->vid;
     $new_term->name = $t($term);
-    $new_term->description = $t('Created by the hello world module');
     $new_term->weight = 1;
     taxonomy_term_save($new_term);
   }
@@ -43,8 +50,6 @@ function _create_vocab_terms($terms) {
  *
  * @param string $theme
  *   Theme machine name.
- *
- * @TODO move to a class for reusability.
  */
 function _set_theme($theme) {
   // Only enable the theme if Drupal and isn't already enabled.
