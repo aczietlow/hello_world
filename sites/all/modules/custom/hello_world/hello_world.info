@@ -2,4 +2,8 @@ name = Hello World module
 description = Contains customizations to the hello world content type.
 core = 7.x
 package = Zietlow
-dependencies[] = content_type_hello_world
+
+dependencies[] = content_type_vocab_hello_world
+
+files[] = hello_world.module
+files[] = hello_world.install

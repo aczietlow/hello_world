@@ -1,0 +1,25 @@
+<?php
+/**
+ * @file
+ * Creates content and sets Drupal in required state for custom code to work.
+ */
+
+/**
+ * Implements hook_install().
+ */
+function hello_world_install() {
+  _set_theme('bartik');
+}
+
+/**
+ * Enables theme.
+ *
+ * @param string $theme
+ *   Theme machine name.
+ */
+function _set_theme($theme) {
+  // Only enable the theme if it exist and isn't already enabled.
+  if (module_exists($theme) && array_key_exists($theme, list_themes())) {
+    theme_enable(array($theme));
+  }
+}
