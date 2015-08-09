@@ -8,7 +8,7 @@
  * @TODO remove.
  */
 function hello_world_menu() {
-  $items = array();
+  $items =[];
 
   $items['debug'] = array(
     'title' => 'Title',
@@ -27,5 +27,8 @@ function hello_world_menu() {
  * @TODO remove.
  */
 function hello_debug() {
+
   return 'hello';
 }
+
+

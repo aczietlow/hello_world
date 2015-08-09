@@ -12,8 +12,24 @@ define('HELLO_WORLD_NODE_BUNDLE', 'hello_world_article');
  * Implements hook_install().
  */
 function hello_world_install() {
-  _create_vocab_terms(array('About Us', 'Misc', 'News'));
+  // Create the section terms.
+  $sections_path = drupal_get_path('module', 'hello_world') . '/import/terms_sections.csv';
+  _create_vocab_terms(_import_from_csv($sections_path));
+
+  // Create the hello world article nodes.
+  $articles_path = drupal_get_path('module', 'hello_world') . '/import/node_hello_world_article.csv';
+  _create_hello_world_article_nodes_with_sections(_import_from_csv($articles_path));
+
   _set_theme(HELLO_WORLD_DEFAULT_THEME);
+}
+
+/**
+ * Load the items from csv that are to be imported as nodes.
+ */
+function _import_from_csv($path) {
+  $items = array_map('str_getcsv', file($path));
+
+  return $items;
 }
 
 /**
@@ -21,6 +37,8 @@ function hello_world_install() {
  *
  * @param array $terms
  *   The taxonomy terms to be created.
+ *
+ * @TODO either make this module agnostic or don't. We can't do both.
  */
 function _create_vocab_terms($terms) {
   // Load the vocab that the terms are going to add to.
@@ -42,6 +60,38 @@ function _create_vocab_terms($terms) {
     $new_term->name = $t($term);
     $new_term->weight = 1;
     taxonomy_term_save($new_term);
+  }
+}
+
+/**
+ * Create hello world article nodes with sections.
+ *
+ * @param array $articles
+ *   An array of stdObjects containing the following properties:
+ *    - title
+ *    - section
+ */
+function _create_hello_world_article_nodes_with_sections($articles) {
+  // The cache may need to be cleared here to help features.
+  if (!node_type_load(HELLO_WORLD_NODE_BUNDLE)) {
+    drupal_flush_all_caches();
+  }
+
+  // Load the t function since it's not available during the install process.
+  $t = get_t();
+
+  foreach ($articles as $article) {
+    $article = (object) $article;
+    $section = taxonomy_get_term_by_name($article->section, HELLO_WORLD_VOCABULARY);
+    $node = new stdClass();
+    $node->type = HELLO_WORLD_NODE_BUNDLE;
+    $node->is_new = TRUE;
+    node_object_prepare($node);
+    $node->title = $t($article->title);
+    $node->language = LANGUAGE_NONE;
+    $node->field_sections[$node->language][]['tid'] = end($section)->tid;
+    $node = node_submit($node);
+    node_save($node);
   }
 }
 
