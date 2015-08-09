@@ -1,0 +1,31 @@
+<?php
+/**
+ * @file
+ * Hello World module to demonstrate grasp of Drupal API to Mediacurrent
+ */
+
+/**
+ * @TODO remove.
+ */
+function hello_world_menu() {
+  $items = array();
+
+  $items['debug'] = array(
+    'title' => 'Title',
+    'description' => 'Description',
+    'access callback' => 'user_access',
+    'access arguments' => array(TRUE),
+    'page callback' => 'hello_debug',
+    'page arguments' => array(),
+    'type' => MENU_CALLBACK,
+  );
+
+  return $items;
+}
+
+/**
+ * @TODO remove.
+ */
+function hello_debug() {
+  return 'hello';
+}

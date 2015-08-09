@@ -4,11 +4,38 @@
  * Creates content and sets Drupal in required state for custom code to work.
  */
 
+define('HELLO_WORLD_DEFAULT_THEME', 'bartik');
+define('HELLO_WORLD_VOCABULARY', 'sections');
+define('HELLO_WORLD_NODE_BUNDLE', 'hello_world_article');
+
 /**
  * Implements hook_install().
  */
 function hello_world_install() {
-  _set_theme('bartik');
+  _create_vocab_terms(array('About Us', 'Misc', 'News'));
+  _set_theme(HELLO_WORLD_DEFAULT_THEME);
+}
+
+/**
+ * Creates taxonomy terms.
+ *
+ * @param array $terms
+ *   The taxonomy terms to be created.
+ */
+function _create_vocab_terms($terms) {
+  // Load the vocab that the terms are going to add to.
+  $vocab = taxonomy_vocabulary_machine_name_load(HELLO_WORLD_VOCABULARY);
+  $t = get_t();
+
+  // Create a save a taxonomy term for each term provided.
+  foreach ($terms as $term) {
+    $new_term = new stdClass();
+    $new_term->vid = $vocab->vid;
+    $new_term->name = $t($term);
+    $new_term->description = $t('Created by the hello world module');
+    $new_term->weight = 1;
+    taxonomy_term_save($new_term);
+  }
 }
 
 /**
@@ -16,10 +43,15 @@ function hello_world_install() {
  *
  * @param string $theme
  *   Theme machine name.
+ *
+ * @TODO move to a class for reusability.
  */
 function _set_theme($theme) {
-  // Only enable the theme if it exist and isn't already enabled.
-  if (module_exists($theme) && array_key_exists($theme, list_themes())) {
-    theme_enable(array($theme));
+  // Only enable the theme if Drupal and isn't already enabled.
+  $themes = list_themes(TRUE);
+  if (module_exists($theme) && array_key_exists($theme, $themes)) {
+    if ($themes[$theme]->status != 1) {
+      theme_enable(array($theme));
+    }
   }
 }
