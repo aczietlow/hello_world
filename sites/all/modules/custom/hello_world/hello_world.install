@@ -25,11 +25,32 @@ function hello_world_install() {
 
 /**
  * Load the items from csv that are to be imported as nodes.
+ *
+ * @param string $path
+ *   The path of the csv file to be loaded.
+ *
+ * @return array
+ *   A multidimensional array containing record items to be imported.
  */
-function _import_from_csv($path) {
-  $items = array_map('str_getcsv', file($path));
+function _import_from_csv($path, $delimiter = ',') {
+  if (!file_exists($path) || !is_readable($path)) {
+    return FALSE;
+  }
 
-  return $items;
+  $header = NULL;
+  $data = [];
+  if (($handle = fopen($path, 'r')) !== FALSE) {
+    while (($row = fgetcsv($handle, 1000, $delimiter)) !== FALSE) {
+      if (!$header) {
+        $header = $row;
+      }
+      else {
+        $data[] = array_combine($header, $row);
+      }
+    }
+    fclose($handle);
+  }
+  return $data;
 }
 
 /**
@@ -37,8 +58,6 @@ function _import_from_csv($path) {
  *
  * @param array $terms
  *   The taxonomy terms to be created.
- *
- * @TODO either make this module agnostic or don't. We can't do both.
  */
 function _create_vocab_terms($terms) {
   // Load the vocab that the terms are going to add to.
@@ -55,9 +74,10 @@ function _create_vocab_terms($terms) {
 
   // Create a save a taxonomy term for each term provided.
   foreach ($terms as $term) {
+    $term = (object) $term;
     $new_term = new stdClass();
     $new_term->vid = $vocab->vid;
-    $new_term->name = $t($term);
+    $new_term->name = $t($term->term);
     $new_term->weight = 1;
     taxonomy_term_save($new_term);
   }

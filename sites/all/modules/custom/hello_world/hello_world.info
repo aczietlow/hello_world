@@ -4,6 +4,7 @@ core = 7.x
 package = Zietlow
 
 dependencies[] = content_type_vocab_hello_world
+dependencies[] = devel
 
 files[] = hello_world.module
 files[] = hello_world.install
