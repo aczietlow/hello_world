@@ -24,12 +24,23 @@ function hello_world_block_info() {
 
   $blocks['hello_world'] = array(
     'info' => t('Hello world block'),
-    'region' => 'sidebar_first',
-    'visibility' => BLOCK_VISIBILITY_LISTED,
-    'pages' => 'node/*',
+    'region' => 'sidebar_second',
   );
 
   return $blocks;
+}
+
+/**
+ * Implements hook_block_info_alter().
+ */
+function hello_world_block_info_alter(&$blocks, $theme, $code_blocks) {
+  if (!path_is_admin(current_path())) {
+    if (isset($blocks['hello_world']['hello_world'])) {
+      $blocks['hello_world']['hello_world']['status'] = 1;
+      $blocks['hello_world']['hello_world']['region'] = 'sidebar_second';
+      $blocks['hello_world']['hello_world']['weight'] = 1;
+    }
+  }
 }
 
 /**
@@ -51,13 +62,18 @@ function hello_world_block_view($delta = '') {
 }
 
 /**
- * Implements hook_block_info_alter().
- *
- * @TODO Only display block on hello_world_article node overview pages.
- * @TODO Place block in sidebar region by default.
+ * Implements hook_block_list_alter().
  */
-function hello_world_block_info_alter(&$blocks, $theme, $code_blocks) {
+function hello_world_block_list_alter(&$blocks) {
+  $node = menu_get_object();
 
+  foreach ($blocks as $key => $block) {
+    // Only display the hello_world block on hello_world_articles.
+    if (!empty($node) && $node->type != 'hello_world_article' && $block->delta == 'hello_world') {
+      unset($blocks[$key]);
+      continue;
+    }
+  }
 }
 
 /**

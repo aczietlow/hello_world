@@ -8,3 +8,5 @@ dependencies[] = devel
 
 files[] = hello_world.module
 files[] = hello_world.install
+
+stylesheets[all][] = hello_world.css
