@@ -24,6 +24,9 @@ function hello_world_block_info() {
 
   $blocks['hello_world'] = array(
     'info' => t('Hello world block'),
+    'region' => 'sidebar_first',
+    'visibility' => BLOCK_VISIBILITY_LISTED,
+    'pages' => 'node/*',
   );
 
   return $blocks;
@@ -45,6 +48,16 @@ function hello_world_block_view($delta = '') {
   }
 
   return $block;
+}
+
+/**
+ * Implements hook_block_info_alter().
+ *
+ * @TODO Only display block on hello_world_article node overview pages.
+ * @TODO Place block in sidebar region by default.
+ */
+function hello_world_block_info_alter(&$blocks, $theme, $code_blocks) {
+
 }
 
 /**
