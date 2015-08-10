@@ -119,7 +119,7 @@ function hello_world_get_links_to_hello_world_articles() {
 
   $result = $query->execute();
 
-  if (isset($result['node'])) {
+  if (!empty($result) && isset($result['node'])) {
     $article_item_nids = array_keys($result['node']);
     $article_items = entity_load('node', $article_item_nids);
     return $article_items;
