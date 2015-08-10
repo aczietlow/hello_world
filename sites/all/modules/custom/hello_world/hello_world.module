@@ -5,30 +5,96 @@
  */
 
 /**
- * @TODO remove.
+ * Implements hook_theme().
  */
-function hello_world_menu() {
-  $items =[];
-
-  $items['debug'] = array(
-    'title' => 'Title',
-    'description' => 'Description',
-    'access callback' => 'user_access',
-    'access arguments' => array(TRUE),
-    'page callback' => 'hello_debug',
-    'page arguments' => array(),
-    'type' => MENU_CALLBACK,
+function hello_world_theme() {
+  $return = array(
+    'hello_world_articles_block' => array(
+      'variables' => array('nodes' => NULL),
+    ),
   );
-
-  return $items;
+  return $return;
 }
 
 /**
- * @TODO remove.
+ * Implements hook_block_info().
  */
-function hello_debug() {
+function hello_world_block_info() {
+  $blocks = array();
 
-  return 'hello';
+  $blocks['hello_world'] = array(
+    'info' => t('Hello world block'),
+  );
+
+  return $blocks;
 }
 
+/**
+ * Implements hook_block_view().
+ */
+function hello_world_block_view($delta = '') {
+  $block = array();
 
+  switch ($delta) {
+    case 'hello_world':
+      $block['subject'] = t('Hello World!');
+      $block['content'] = theme('hello_world_articles_block', array(
+          'nodes' => hello_world_get_links_to_hello_world_articles(),
+        ));
+      break;
+  }
+
+  return $block;
+}
+
+/**
+ * Returns HTML for a list of of hello world articles.
+ *
+ * @param array $variables
+ *   An associative array containing:
+ *   - nodes: Loaded entity objects.
+ *
+ * @ingroup themeable
+ *
+ * @return string
+ *   The output to be rendered.
+ */
+function theme_hello_world_articles_block($variables) {
+  $output = '';
+  foreach ($variables['nodes'] as $node) {
+    $links[] = array(
+      'title' => $node->title,
+      'href' => 'node/' . $node->nid,
+    );
+  }
+
+  $output .= theme('links', array(
+      'links' => $links,
+      'attributes' => array('class' => array('links'))));
+  return $output;
+}
+
+/**
+ * Gets links to the hello world articles.
+ *
+ * @return array
+ *   Array of links to hello world articles.
+ */
+function hello_world_get_links_to_hello_world_articles() {
+  $query = new EntityFieldQuery();
+
+  $query->entityCondition('entity_type', 'node')
+    ->entityCondition('bundle', 'hello_world_article')
+    ->propertyCondition('status', NODE_PUBLISHED)
+    ->range(0, 10);
+
+  $result = $query->execute();
+
+  if (isset($result['node'])) {
+    $article_item_nids = array_keys($result['node']);
+    $article_items = entity_load('node', $article_item_nids);
+    return $article_items;
+  }
+
+  return FALSE;
+}

@@ -36,6 +36,6 @@ is enabled the content types and vocabularies will be created.
 
 * Satisfy all dependencies during module installation via hook_install
   * I would have normally used entity metadata wrapper to handle creating entities, but it's not part of Drupal 7 core.
-  * I creating the entities from data in csv's in order to make this more easily maintained in the future.
+  * I'm creating the entities from csv's in order to make this more easily maintained in the future.
 * Create a custom block, satisfying the dependencies listed above
 * Implement theme customization 

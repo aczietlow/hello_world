@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="65fb365e-fc43-40d3-8a13-a5d1338ffa0b" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sites/all/modules/custom/hello_world/hello_world.install" afterPath="$PROJECT_DIR$/sites/all/modules/custom/hello_world/hello_world.install" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sites/all/modules/custom/hello_world/hello_world.module" afterPath="$PROJECT_DIR$/sites/all/modules/custom/hello_world/hello_world.module" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sites/all/modules/custom/hello_world/thoughtProcess.md" afterPath="$PROJECT_DIR$/sites/all/modules/custom/hello_world/thoughtProcess.md" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="mediacurrent.iws" />
@@ -34,17 +35,17 @@
             <state />
           </provider>
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-8.5625" vertical-offset="248" max-vertical-offset="828">
-              <caret line="29" column="21" selection-start-line="29" selection-start-column="21" selection-end-line="29" selection-end-column="21" />
+            <state vertical-scroll-proportion="-15.875" vertical-offset="194" max-vertical-offset="828">
+              <caret line="39" column="65" selection-start-line="39" selection-start-column="65" selection-end-line="39" selection-end-column="65" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="hello_world.module" pinned="false" current-in-tab="false">
+      <file leaf-file-name="hello_world.module" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/sites/all/modules/custom/hello_world/hello_world.module">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-3.3333333" vertical-offset="0" max-vertical-offset="720">
+            <state vertical-scroll-proportion="0.15517241" vertical-offset="0" max-vertical-offset="1908">
               <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
               <folding>
                 <element signature="e#6#95#0#PHP" expanded="true" />
@@ -53,11 +54,74 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="hello_world.install" pinned="false" current-in-tab="true">
+      <file leaf-file-name="node.module" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/modules/node/node.module">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-0.31578946" vertical-offset="42066" max-vertical-offset="75492">
+              <caret line="2342" column="0" selection-start-line="2342" selection-start-column="0" selection-end-line="2350" selection-end-column="3" />
+              <folding>
+                <marker date="1434566324000" expanded="true" signature="12013:12076" placeholder="SELECT times..." />
+                <marker date="1434566324000" expanded="true" signature="18272:18316" placeholder="SELECT 1 FRO..." />
+                <marker date="1434566324000" expanded="true" signature="54014:54041" placeholder="SELECT COUNT..." />
+                <marker date="1434566324000" expanded="true" signature="54084:54217" placeholder="SELECT COUNT..." />
+                <marker date="1434566324000" expanded="true" signature="59998:60046" placeholder="SELECT vid F..." />
+                <marker date="1434566324000" expanded="true" signature="62900:62955" placeholder="SELECT COUNT..." />
+                <marker date="1434566324000" expanded="true" signature="71994:72037" placeholder="SELECT chang..." />
+                <marker date="1434566324000" expanded="true" signature="72344:72558" placeholder="SELECT r.vid..." />
+                <marker date="1434566324000" expanded="true" signature="75207:75267" placeholder="SELECT nid F..." />
+                <marker date="1434566324000" expanded="true" signature="78197:78273" placeholder="SELECT type ..." />
+                <marker date="1434566324000" expanded="true" signature="81018:81067" placeholder="SELECT modul..." />
+                <marker date="1434566324000" expanded="true" signature="90021:90185" placeholder="SELECT n.nid..." />
+                <marker date="1434566324000" expanded="true" signature="120978:121018" placeholder="SELECT nid F..." />
+                <marker date="1434566324000" expanded="true" signature="122411:122449" placeholder="SELECT COUNT..." />
+                <marker date="1434566324000" expanded="true" signature="122545:122601" placeholder="SELECT nid F..." />
+                <marker date="1434566324000" expanded="true" signature="131225:131266" placeholder="SELECT name ..." />
+                <marker date="1434566324000" expanded="true" signature="132019:132047" placeholder="SELECT COUNT..." />
+                <marker date="1434566324000" expanded="true" signature="132151:132192" placeholder="SELECT name ..." />
+                <marker date="1434566324000" expanded="true" signature="132405:132462" placeholder="SELECT uid, ..." />
+                <marker date="1434566324000" expanded="true" signature="133284:133324" placeholder="SELECT 1 FRO..." />
+                <marker date="1434566324000" expanded="true" signature="133756:133798" placeholder="SELECT uid f..." />
+                <marker date="1434566324000" expanded="true" signature="136011:136045" placeholder="SELECT COUNT..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="block.tpl.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/modules/block/block.tpl.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="396">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="block.info" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/modules/block/block.info">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="342">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="block-admin-display-form.tpl.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/modules/block/block-admin-display-form.tpl.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="936">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="hello_world.install" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/sites/all/modules/custom/hello_world/hello_world.install">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.37931034" vertical-offset="1922" max-vertical-offset="2502">
-              <caret line="119" column="17" selection-start-line="119" selection-start-column="17" selection-end-line="119" selection-end-column="17" />
+            <state vertical-scroll-proportion="-17.481482" vertical-offset="1922" max-vertical-offset="2502">
+              <caret line="133" column="0" selection-start-line="133" selection-start-column="0" selection-end-line="133" selection-end-column="0" />
               <folding>
                 <element signature="e#6#100#0#PHP" expanded="true" />
               </folding>
@@ -75,26 +139,6 @@
           </provider>
           <provider editor-type-id="com.intellij.database.editor.CsvTableFileEditorProvider">
             <state />
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="hello_world.info" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/sites/all/modules/custom/hello_world/hello_world.info">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="288">
-              <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="terms_sections.csv" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/sites/all/modules/custom/hello_world/import/terms_sections.csv">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="162">
-              <caret line="0" column="4" selection-start-line="0" selection-start-column="4" selection-end-line="0" selection-end-column="4" />
-              <folding />
-            </state>
           </provider>
         </entry>
       </file>
@@ -315,6 +359,20 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mediacurrent" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mediacurrent" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="modules" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
       <pane id="Scope" />
@@ -400,7 +458,13 @@
       <option name="project" value="LOCAL" />
       <updated>1439161692346</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Code clean up.">
+      <created>1439161806903</created>
+      <option name="number" value="00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1439161806903</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -408,22 +472,22 @@
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.31216648" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Command Line Tools Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32916668" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.33645833" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.31216648" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32916668" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2497332" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -452,7 +516,8 @@
     <MESSAGE value="Creating the taxonomy terms during install actually works now." />
     <MESSAGE value="Importing data for entity creation from csv now." />
     <MESSAGE value="Successfully importing content from csvs... Without migrate." />
-    <option name="LAST_COMMIT_MESSAGE" value="Successfully importing content from csvs... Without migrate." />
+    <MESSAGE value="Code clean up." />
+    <option name="LAST_COMMIT_MESSAGE" value="Code clean up." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -537,37 +602,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/modules/node/node.module">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-7.0" vertical-offset="18657" max-vertical-offset="75492">
-          <caret line="1051" column="9" selection-start-line="1051" selection-start-column="9" selection-end-line="1051" selection-end-column="9" />
-          <folding>
-            <marker date="1434566324000" expanded="true" signature="-1:-1" placeholder="SELECT times..." />
-            <marker date="1434566324000" expanded="true" signature="-1:-1" placeholder="SELECT 1 FRO..." />
-            <marker date="1434566324000" expanded="true" signature="-1:-1" placeholder="SELECT COUNT..." />
-            <marker date="1434566324000" expanded="true" signature="-1:-1" placeholder="SELECT COUNT..." />
-            <marker date="1434566324000" expanded="true" signature="-1:-1" placeholder="SELECT vid F..." />
-            <marker date="1434566324000" expanded="true" signature="-1:-1" placeholder="SELECT COUNT..." />
-            <marker date="1434566324000" expanded="true" signature="-1:-1" placeholder="SELECT chang..." />
-            <marker date="1434566324000" expanded="true" signature="-1:-1" placeholder="SELECT r.vid..." />
-            <marker date="1434566324000" expanded="true" signature="-1:-1" placeholder="SELECT nid F..." />
-            <marker date="1434566324000" expanded="true" signature="-1:-1" placeholder="SELECT type ..." />
-            <marker date="1434566324000" expanded="true" signature="-1:-1" placeholder="SELECT modul..." />
-            <marker date="1434566324000" expanded="true" signature="-1:-1" placeholder="SELECT n.nid..." />
-            <marker date="1434566324000" expanded="true" signature="-1:-1" placeholder="SELECT nid F..." />
-            <marker date="1434566324000" expanded="true" signature="-1:-1" placeholder="SELECT COUNT..." />
-            <marker date="1434566324000" expanded="true" signature="-1:-1" placeholder="SELECT nid F..." />
-            <marker date="1434566324000" expanded="true" signature="-1:-1" placeholder="SELECT name ..." />
-            <marker date="1434566324000" expanded="true" signature="-1:-1" placeholder="SELECT COUNT..." />
-            <marker date="1434566324000" expanded="true" signature="-1:-1" placeholder="SELECT name ..." />
-            <marker date="1434566324000" expanded="true" signature="-1:-1" placeholder="SELECT uid, ..." />
-            <marker date="1434566324000" expanded="true" signature="-1:-1" placeholder="SELECT 1 FRO..." />
-            <marker date="1434566324000" expanded="true" signature="-1:-1" placeholder="SELECT uid f..." />
-            <marker date="1434566324000" expanded="true" signature="-1:-1" placeholder="SELECT COUNT..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/modules/taxonomy/taxonomy.module">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.34920636" vertical-offset="25020" max-vertical-offset="37116">
@@ -591,17 +625,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="288">
           <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sites/all/modules/custom/hello_world/thoughtProcess.md">
-      <provider editor-type-id="MarkdownPreviewEditor">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-8.5625" vertical-offset="248" max-vertical-offset="828">
-          <caret line="29" column="21" selection-start-line="29" selection-start-column="21" selection-end-line="29" selection-end-column="21" />
           <folding />
         </state>
       </provider>
@@ -648,22 +671,119 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/sites/all/modules/custom/hello_world/hello_world.module">
+    <entry file="file://$PROJECT_DIR$/sites/all/modules/custom/hello_world/hello_world.install">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-3.3333333" vertical-offset="0" max-vertical-offset="720">
-          <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+        <state vertical-scroll-proportion="-17.481482" vertical-offset="1922" max-vertical-offset="2502">
+          <caret line="133" column="0" selection-start-line="133" selection-start-column="0" selection-end-line="133" selection-end-column="0" />
           <folding>
-            <element signature="e#6#95#0#PHP" expanded="true" />
+            <element signature="e#6#100#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/sites/all/modules/custom/hello_world/hello_world.install">
+    <entry file="file://$PROJECT_DIR$/modules/block/block.tpl.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.37931034" vertical-offset="1922" max-vertical-offset="2502">
-          <caret line="119" column="17" selection-start-line="119" selection-start-column="17" selection-end-line="119" selection-end-column="17" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="607">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/block/block.info">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="594">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/block/block-admin-display-form.tpl.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="936">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/block/block.module">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.33333334" vertical-offset="11871" max-vertical-offset="19926">
+          <caret line="673" column="9" selection-start-line="673" selection-start-column="9" selection-end-line="673" selection-end-column="9" />
           <folding>
-            <element signature="e#6#100#0#PHP" expanded="true" />
+            <marker date="1434566324000" expanded="true" signature="-1:-1" placeholder="SELECT bid, ..." />
+            <marker date="1434566324000" expanded="true" signature="-1:-1" placeholder="SELECT body,..." />
+            <marker date="1434566324000" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..." />
+            <marker date="1434566324000" expanded="true" signature="-1:-1" placeholder="SELECT DISTI..." />
+            <marker date="1434566324000" expanded="true" signature="-1:-1" placeholder="SELECT 1 FRO..." />
+            <marker date="1434566324000" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..." />
+            <marker date="1434566324000" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..." />
+            <marker date="1434566324000" expanded="true" signature="-1:-1" placeholder="SELECT modul..." />
+            <marker date="1434566324000" expanded="true" signature="-1:-1" placeholder="SELECT name ..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/node/node.api.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.4479718" vertical-offset="10222" max-vertical-offset="24138">
+          <caret line="585" column="43" selection-start-line="585" selection-start-column="43" selection-end-line="585" selection-end-column="43" />
+          <folding>
+            <marker date="1434566324000" expanded="true" signature="-1:-1" placeholder="SELECT nid, ..." />
+            <marker date="1434566324000" expanded="true" signature="-1:-1" placeholder="SELECT comme..." />
+            <marker date="1434566324000" expanded="true" signature="-1:-1" placeholder="SELECT subje..." />
+            <marker date="1434566324000" expanded="true" signature="-1:-1" placeholder="SELECT nid, ..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sites/all/modules/custom/hello_world/thoughtProcess.md">
+      <provider editor-type-id="MarkdownPreviewEditor">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-15.875" vertical-offset="194" max-vertical-offset="828">
+          <caret line="39" column="65" selection-start-line="39" selection-start-column="65" selection-end-line="39" selection-end-column="65" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/node/node.module">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.31578946" vertical-offset="42066" max-vertical-offset="75492">
+          <caret line="2342" column="0" selection-start-line="2342" selection-start-column="0" selection-end-line="2350" selection-end-column="3" />
+          <folding>
+            <marker date="1434566324000" expanded="true" signature="12013:12076" placeholder="SELECT times..." />
+            <marker date="1434566324000" expanded="true" signature="18272:18316" placeholder="SELECT 1 FRO..." />
+            <marker date="1434566324000" expanded="true" signature="54014:54041" placeholder="SELECT COUNT..." />
+            <marker date="1434566324000" expanded="true" signature="54084:54217" placeholder="SELECT COUNT..." />
+            <marker date="1434566324000" expanded="true" signature="59998:60046" placeholder="SELECT vid F..." />
+            <marker date="1434566324000" expanded="true" signature="62900:62955" placeholder="SELECT COUNT..." />
+            <marker date="1434566324000" expanded="true" signature="71994:72037" placeholder="SELECT chang..." />
+            <marker date="1434566324000" expanded="true" signature="72344:72558" placeholder="SELECT r.vid..." />
+            <marker date="1434566324000" expanded="true" signature="75207:75267" placeholder="SELECT nid F..." />
+            <marker date="1434566324000" expanded="true" signature="78197:78273" placeholder="SELECT type ..." />
+            <marker date="1434566324000" expanded="true" signature="81018:81067" placeholder="SELECT modul..." />
+            <marker date="1434566324000" expanded="true" signature="90021:90185" placeholder="SELECT n.nid..." />
+            <marker date="1434566324000" expanded="true" signature="120978:121018" placeholder="SELECT nid F..." />
+            <marker date="1434566324000" expanded="true" signature="122411:122449" placeholder="SELECT COUNT..." />
+            <marker date="1434566324000" expanded="true" signature="122545:122601" placeholder="SELECT nid F..." />
+            <marker date="1434566324000" expanded="true" signature="131225:131266" placeholder="SELECT name ..." />
+            <marker date="1434566324000" expanded="true" signature="132019:132047" placeholder="SELECT COUNT..." />
+            <marker date="1434566324000" expanded="true" signature="132151:132192" placeholder="SELECT name ..." />
+            <marker date="1434566324000" expanded="true" signature="132405:132462" placeholder="SELECT uid, ..." />
+            <marker date="1434566324000" expanded="true" signature="133284:133324" placeholder="SELECT 1 FRO..." />
+            <marker date="1434566324000" expanded="true" signature="133756:133798" placeholder="SELECT uid f..." />
+            <marker date="1434566324000" expanded="true" signature="136011:136045" placeholder="SELECT COUNT..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sites/all/modules/custom/hello_world/hello_world.module">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.15517241" vertical-offset="0" max-vertical-offset="1908">
+          <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+          <folding>
+            <element signature="e#6#95#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
