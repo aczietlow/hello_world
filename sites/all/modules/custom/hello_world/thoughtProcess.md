@@ -37,5 +37,8 @@ is enabled the content types and vocabularies will be created.
 * Satisfy all dependencies during module installation via hook_install
   * I would have normally used entity metadata wrapper to handle creating entities, but it's not part of Drupal 7 core.
   * I'm creating the entities from csv's in order to make this more easily maintained in the future.
+    * Parse CSVs to import data in Drupal
 * Create a custom block, satisfying the dependencies listed above
+  * Write query that can be used to populate the block with the links to hello world articles.
+  * Figure out what hooks to implement to get blocks configured the way I need them
 * Implement theme customization 
