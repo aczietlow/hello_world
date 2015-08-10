@@ -7,7 +7,7 @@
 
 ## Identify Dependencies
 
-This project requires Drupal to be in a known state in order to be able to full fill the dependencies. My first 
+This project requires Drupal to be in a known state in order to be able to fullfill the dependencies. My first 
 requirement will be to put Drupal into the defined state by creating the required content, and setting the default
 theme. I'll also be declaring the content_type_vocab_hello_world as a dependency so that when the hello_world module
 is enabled the content types and vocabularies will be created.
