@@ -44,13 +44,13 @@ function hello_world_block_info() {
  * Implements hook_block_info_alter().
  */
 function hello_world_block_info_alter(&$blocks, $theme, $code_blocks) {
-  if (!path_is_admin(current_path())) {
-    if (isset($blocks['hello_world']['hello_world'])) {
-      $blocks['hello_world']['hello_world']['status'] = 1;
-      // Current throws an error that can be safely ignored.
-      // @see https://www.drupal.org/node/1172560
-      $blocks['hello_world']['hello_world']['region'] = 'sidebar_second';
-      $blocks['hello_world']['hello_world']['weight'] = 1;
+  if ($theme == variable_get('theme_default', '0')) {
+    if (!path_is_admin(current_path())) {
+      if (isset($blocks['hello_world']['hello_world'])) {
+        $blocks['hello_world']['hello_world']['status'] = 1;
+        $blocks['hello_world']['hello_world']['region'] = 'sidebar_second';
+        $blocks['hello_world']['hello_world']['weight'] = 1;
+      }
     }
   }
 }
