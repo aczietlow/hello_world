@@ -1,0 +1,7 @@
+#block-hello-world-hello-world h2 {
+    font-weight: bold;
+}
+
+#hello-world--subtext {
+    font-style: italic;
+}
