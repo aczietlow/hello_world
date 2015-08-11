@@ -7,5 +7,6 @@ dependencies[] = content_type_vocab_hello_world
 
 files[] = hello_world.module
 files[] = hello_world.install
+files[] = node--hello-world-article.tpl.php
 
 stylesheets[all][] = hello_world.css

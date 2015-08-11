@@ -4,6 +4,10 @@
  * Hello World module to demonstrate grasp of Drupal API to Mediacurrent
  */
 
+define('HELLO_WORLD_DEFAULT_THEME', 'bartik');
+define('HELLO_WORLD_VOCABULARY', 'sections');
+define('HELLO_WORLD_NODE_BUNDLE', 'hello_world_article');
+
 /**
  * Implements hook_theme().
  */
@@ -11,6 +15,12 @@ function hello_world_theme() {
   $return = array(
     'hello_world_articles_block' => array(
       'variables' => array('nodes' => NULL),
+    ),
+    'node__hello_world_article' => array(
+      'render element' => 'content',
+      'base hook' => 'node',
+      'template' => 'node--hello-world-article',
+      'path' => drupal_get_path('module', 'hello_world') . '/templates',
     ),
   );
   return $return;
@@ -110,12 +120,16 @@ function theme_hello_world_articles_block($variables) {
  *   Array of links to hello world articles.
  */
 function hello_world_get_links_to_hello_world_articles() {
+
+  $terms = hello_world_get_enabled_section_tids();
+
   $query = new EntityFieldQuery();
 
   $query->entityCondition('entity_type', 'node')
     ->entityCondition('bundle', 'hello_world_article')
     ->propertyCondition('status', NODE_PUBLISHED)
-    ->range(0, 10);
+    ->fieldCondition('field_sections', 'tid', $terms, 'IN')
+    ->range(0, 4);
 
   $result = $query->execute();
 
@@ -126,4 +140,26 @@ function hello_world_get_links_to_hello_world_articles() {
   }
 
   return FALSE;
+}
+
+/**
+ * Gets tids of all enabled terms from the sections vocab.
+ *
+ * @return array
+ *   Array of tids.
+ */
+function hello_world_get_enabled_section_tids() {
+  $query = new EntityFieldQuery();
+
+  $query->entityCondition('entity_type', 'taxonomy_term')
+    ->entityCondition('bundle', HELLO_WORLD_VOCABULARY)
+    ->fieldCondition('field_enabled', 'value', 1);
+
+
+  $result = $query->execute();
+
+  if (!empty($result) && isset($result['taxonomy_term'])) {
+    $tids = array_keys($result['taxonomy_term']);
+    return $tids;
+  }
 }

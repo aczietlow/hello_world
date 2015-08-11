@@ -4,10 +4,6 @@
  * Creates content and sets Drupal in required state for custom code to work.
  */
 
-define('HELLO_WORLD_DEFAULT_THEME', 'bartik');
-define('HELLO_WORLD_VOCABULARY', 'sections');
-define('HELLO_WORLD_NODE_BUNDLE', 'hello_world_article');
-
 /**
  * Implements hook_install().
  */
